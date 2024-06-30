@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href="00project.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="00project.js"></script>
+
+
+
+</head>
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+
+    <nav class="navbar bg-body-tertiary fixed-top " style=" background-color: transparent !important; ">
+        <div class="container-fluid" >
+             <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a>  -->
+            <button class="navbar-toggler d-inline  " style="border: 4px solid rgb(222, 108, 214); background-color: rgb(193, 98, 185);" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon " style="color: white;"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: #252b5f84;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-2 " id="offcanvasNavbarLabel" style="color: white;">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="#"  style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fs-4" aria-current="page" href="rock.html" style="color: white;">Rock Paper Scissors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="tictactoe.html" style="color: white;">Tic Tac Toe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="guess.html" style="color: white;">Guess the number</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="hangman.html" style="color: white;">Hangman</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="ztemp.html" style="color: white;">Connect 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="box.html" style="color: white;">Dots and Boxes</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- logo -->
+    <div id="but d-flex justify-content-start">
+
+
+        <div class="text-center">
+            <h1 class="text-center pt-4 pb-2 mb-0 d-inline">Game Zone</h1>
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center" >
+                        <div id="shape" class="text-center d-block"> </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+
+
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center px-2">
+                
+                <div id="img1" class="col-lg-3 col-8 col-md-5 gam zoom my-3 mx-3 px-0 rounded-5"
+                    style=" overflow: hidden;">
+                    <a href="tictactoe.html" style="text-decoration: none !important;" class="text-white">
+                        <img src="Stock Image_ Signs_Symbols.jpeg" alt="" class="w-100 h-100 rounded-3">
+                        <div id="text" class="position-relative bc ps-3 ff1"
+                            style="top:-45px;  z-index: 10; height:210px; ">
+                            <p class="mb-1  hv fs-3 ff" style="transition: 0.3s; ">Tic Tac Toe</p>Tic Tac Toe is a classic board game where two players take turns marking Xs and Os on a grid, aiming to form a line of three of their symbols to win.
+                        </div>
+                    </a>
+                </div>
+
+                <div id="img1" class="col-lg-3 col-8 col-md-5 zoom gam my-3 mx-3 px-0 rounded-5"
+                    style=" overflow: hidden;">
+                    <a href="box.html" style="text-decoration: none !important;" class="text-white"><img src="DOTS AND BOXES.jpg" alt="" class="w-100 h-100 rounded-3">
+                        <div id="text" class="position-relative bc ps-3 ff1"
+                            style="top:-45px;  z-index: 10; height:175px; ">
+                            <p class="mb-1  hv fs-3 ff" style="transition: 0.3s; ">Dot and Boxes</p>Dot and Boxes is a game where two players take turns connecting dots to form lines, aiming to create boxes. 
+                        </div></a>
+                </div>
+
+                <div id="img1" class="col-lg-3 col-8 col-md-5 gam zoom my-3 mx-3 px-0 rounded-5"
+                    style=" overflow: hidden;">
+
+                    <a href="ztemp.html" style="text-decoration: none !important;" class="text-white"><img
+                            src="connect.png" alt="" class="w-100 h-100 rounded-3 ">
+                        <div id="text" class="position-relative bc ps-3 ff1"
+                            style="top:-45px;  z-index: 10; height:175px; ">
+                            <p class="mb-1  hv fs-3 ff text-white" style="transition: 0.3s ; ">Connect 4</p>Connect 4 is a game where the objective is to be the first to align four of your colored discs on a grid.
+                        </div>
+                    </a>
+
+                </div>
+
+                <div id="img1" class="col-lg-3 col-8 col-md-5 gam my-3 mx-3 zoom px-0 rounded-5"
+                    style=" overflow: hidden;">
+                    <a href="guess.html" style="text-decoration: none !important; " class="text-white">
+                        <img src="img3.jpg" alt="" class="w-100 h-100 rounded-3 ">
+                        <div id="text" class="position-relative bc ps-3 ff1"
+                            style="top:-45px;  z-index: 10; height:175px; ">
+                            <p class="mb-1  hv fs-3 ff" style="transition: 0.3s; ">Guess The Number</p>
+                            Guess the Number is a game in which one player thinks of a number and another player tries to guess it.
+                        </div>
+                    </a>
+                </div>
+
+                <div id="img1" class="col-lg-3 col-8 col-md-5 gam zoom my-3 mx-3 px-0 rounded-5"
+                    style=" overflow: hidden; position:relative">
+
+                    <a href="rock.html" style="text-decoration: none !important;" class="text-white">
+                        <img src="rock paper scissors.jpeg" alt="" class="w-100 h-100 rounded-3 " style="z-index:-1;position:relative">
+                        <div id="text" class="position-relative bc ps-3 ff1"
+                            style="top:-45px;  z-index: 1000 !important; height:175px; ">
+                            <p class="mb-1   fs-3 ff" style="transition: 0.3s; ">Rock Paper Scissor</p><p style="font-size: 16px;">
+                                Rock, Paper, Scissors is a popular hand game where two players choose from three simple hand signs: Rock, Paper, or Scissors. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="img1" class="col-lg-3 col-8 col-md-5 zoom gam my-3 mx-3 px-0 rounded-5"
+                    style=" overflow: hidden;">
+                    <a href="hangman.html" style="text-decoration: none !important;" class="text-white">
+                        <img src="3.jpg" alt="" class="w-100 h-100 rounded-3">
+                        <div id="text" class="position-relative bc ps-3 ff1"
+                            style="top:-45px;  z-index: 10; height:175px; ">
+                            <p class="mb-1  hv fs-3 ff" style="transition: 0.3s; ">Hangman</p>Hangman is a word game where a player thinks of a word and another player tries to guess it by suggesting letters one at a time. 
+                        </div>
+                    </a>
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 bk1 py-5 px-3">
+                    <div class="row">
+                        <h2 class="">About Games</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li class="hvv " id="ch" onclick=color1() >
+                                <p class="txt text-white d-flex ">
+                                    <span style="width:90%;">Tic Tac Toe</span><i style="rotate:90deg; "
+                                        class="fa-solid fa-angle-up"></i>
+                                </p>
+                            </li>
+                            <li class="hvv " onclick=color1()>
+                                <p class="txt text-white d-flex ">
+                                    <span style="width:90%;">Rock Paper Scissor</span><i style="rotate:90deg; "
+                                        class="fa-solid fa-angle-up"></i>
+                                </p>
+                            </li>
+                            <li class="hvv " onclick=color1()>
+                                <p class="txt text-white d-flex">
+                                    <span style="width:90%;">Connect 4</span><i style="rotate:90deg; "
+                                        class="fa-solid fa-angle-up"></i>
+                                </p>
+                            </li>
+                            <li class="hvv " onclick=color1()>
+                                <p class="txt text-white d-flex">
+                                    <span style="width:90%;">Dot and Boxes</span><i style="rotate:90deg; "
+                                        class="fa-solid fa-angle-up"></i>
+                                </p>
+                            </li>
+                            <li class="hvv " onclick=color1()>
+                                <p class="txt text-white d-flex">
+                                    <span style="width:90%;">Hangman</span><i style="rotate:90deg; "
+                                        class="fa-solid fa-angle-up"></i>
+                                </p>
+                            </li>
+                            <li class="hvv " onclick=color1()>
+                                <p class="txt text-white d-flex">
+                                    <span style="width:90%;">Guess the Number</span><i style="rotate:90deg; "
+                                        class="fa-solid fa-angle-up"></i>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 back text-dark px-5 rules">
+                    <div class="row pt-5 ">
+                        <h2 class="text-center fs-1">Tic Tac Toe</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><strong>Game Grid:</strong> Tic-Tac-Toe is played on a 3x3 grid, creating nine cells for
+                                gameplay.</li>
+                            <li><strong>Two Players: </strong>The game is typically played by two players, one using "X"
+                                and the other using "O" as their symbols.</li>
+                            <li><strong>Turn-Based:</strong>
+                                Players take turns to make a move, starting with one player (often "X") and then
+                                alternating.
+                            </li>
+                            <li><strong>Winning Combinations: </strong> A player wins by placing three of their symbols
+                                consecutively in a row, column, or diagonal. For example, if "X" occupies the top row
+                                horizontally, "X" wins the game.</li>
+                            <li><strong>Strategy and Tactics: </strong> Tic-Tac-Toe involves strategy and tactics to
+                                block the opponent's moves while trying to create your winning combination. It's a game
+                                of skill and planning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9 back text-dark px-5 rules" id="ch">
+                    <div class="row pt-5 ">
+                        <h2 class="text-center fs-1">Rock Paper Scissor</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><strong>Two Players:</strong>The game is played between two players.</li>
+                            <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes:
+                                Rock, Paper, or Scissors.</li>
+                            <li><strong>Winning Combinations:</strong>
+                                <ul style="list-style-type: disc;">
+                                    <li>Rock beats Scissors.</li>
+                                    <li>Scissors beats Paper.</li>
+                                    <li>Paper beats Rock.</li>
+                                </ul>
+                            </li>
+                            <li><strong></strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 back text-dark px-5 rules">
+                    <div class="row pt-5 ">
+                        <h2 class="text-center fs-1">Connect 4</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><strong>Game Board:</strong> Connect Four is played on a vertically standing grid with 6
+                                rows and 7 columns, creating 42 slots in total.</li>
+                            <li><strong>Two Players:</strong> The game is typically played by two players, one using red
+                                discs and the other using yellow discs.</li>
+                            <li><strong>Objective: </strong>
+                                The objective is to be the first player to connect four of their discs consecutively in
+                                a row, column, or diagonal.
+                            </li>
+                            <li><strong>Turn-Based:</strong>Players take turns to drop one of their discs into any of
+                                the empty slots at the top of a column. The disc falls to the lowest available slot in
+                                that column.</li>
+                            <li><strong>Winning Combinations: </strong> A player wins by forming a line of four of their
+                                discs, either horizontally, vertically, or diagonally. The line can be either ascending
+                                or descending.</li>
+                    </div>
+                </div>
+                <div class="col-md-9 back text-dark px-5 rules">
+                    <div class="row pt-5 ">
+                        <h2 class="text-center fs-1">Dot and Boxes</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><strong>Game Grid: </strong>Dot and Boxes is played on a grid of dots, typically a
+                                square grid, with multiple rows and columns. The size of the grid can vary.</li>
+                            <li><strong>Two Players: </strong> The game is typically played by two players, although it
+                                can be played by more in variations. Players take turns.</li>
+                            <li><strong>Objective: </strong>
+                                The objective is to create as many boxes as possible by drawing horizontal and vertical
+                                lines between adjacent dots.
+                            </li>
+                            <li><strong>Winning: </strong>The game continues until no more lines can be drawn. The
+                                player who creates the most boxes by the end of the game wins. The player with the most
+                                boxes is determined by counting the initials inside each box.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 back text-dark px-5 rules">
+                    <div class="row pt-5 ">
+                        <h2 class="text-center fs-1">Hangman</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><strong>Word Selection: </strong> One player selects a word and keeps it secret from the
+                                other player(s). The word should be chosen from a specific category (e.g., animals,
+                                movies) and can include spaces and punctuation.</li>
+                            <li><strong>Word Display:</strong>For the other player(s), the word is displayed as a series
+                                of underscores, one for each letter in the word. For example, "apple" is displayed as "_
+                                _ _ _ _."</li>
+                            <li><strong>Guessing Letters:</strong>
+                                Players take turns guessing letters one at a time. They can guess any letter from the
+                                alphabet.
+                            </li>
+                            <li><strong>Correct Guesses:</strong>If a player guesses a letter that is in the word, the
+                                letter is revealed in its correct position(s). For example, if the word is "apple" and a
+                                player guesses "p," the display becomes "_ _ _ p p _."</li>
+                            <li><strong>Incorrect Guesses:</strong>If a player guesses a letter that is not in the word,
+                                a part of the "hangman" (typically a gallows with a noose) is drawn. The number of
+                                incorrect guesses allowed before the hangman is fully drawn varies but is usually around
+                                six incorrect guesses.</li>
+                            <li><strong>Winning:</strong>The guessing player(s) win if they successfully guess all the
+                                letters in the word before the hangman is fully drawn. They lose if the hangman is drawn
+                                completely without guessing the word.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 back text-dark px-5 rules">
+                    <div class="row pt-5 ">
+                        <h2 class="text-center fs-1">Guess the Number</h2>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><strong>Objective: </strong>The objective of the game is to guess the correct number
+                                chosen by the computer or another player.</li>
+                            <li><strong>Players:</strong> This game can be played by one player (against the computer)
+                                or two or more players taking turns to guess.</li>
+                            <li><strong>Guessing: </strong>
+                                Players make guesses by selecting a number from the established range. They input their
+                                guess, and it's checked against the secret number.
+                            </li>
+                            <li><strong>Winning:</strong>The game continues until a player correctly guesses the secret
+                                number. When that happens, they are declared the winner. In a multiplayer game, the
+                                player who guesses correctly first wins. In a single-player game, the player aims to
+                                beat their own best time or score.</li>
+                            <li><strong></strong></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class=" mt-5 pt-3">
+        <div class="container text-black back rounded-2">
+            <div class="row">
+                <h3 class="text-center">About Games</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <h2>Rock Paper Scissor</h2>
+                <ul>
+                    <li><strong>Two Players:</strong>The game is played between two players.</li>
+                    <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes: Rock, Paper, or Scissors.</li>
+                    <li><strong>Winning Combinations:</strong>
+                        <ul>
+                            <li>Rock beats Scissors.</li>
+                            <li>Scissors beats Paper.</li>
+                            <li>Paper beats Rock.</li>
+                        </ul>
+                    </li>
+                    <li><strong></strong></li>
+                    
+                </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Rock Paper Scissor</h2>
+                    <ul>
+                        <li><strong>Two Players:</strong>The game is played between two players.</li>
+                        <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes: Rock, Paper, or Scissors.</li>
+                        <li><strong>Winning Combinations:</strong>
+                            <ul>
+                                <li>Rock beats Scissors.</li>
+                                <li>Scissors beats Paper.</li>
+                                <li>Paper beats Rock.</li>
+                            </ul>
+                        </li>
+                        <li><strong></strong></li>
+                    </ul>
+                    </div> -->
+    <!-- <div class="col-md-6">
+                        <h2>Rock Paper Scissor</h2>
+                        <ul>
+                            <li><strong>Two Players:</strong>The game is played between two players.</li>
+                            <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes: Rock, Paper, or Scissors.</li>
+                            <li><strong>Winning Combinations:</strong>
+                                <ul>
+                                    <li>Rock beats Scissors.</li>
+                                    <li>Scissors beats Paper.</li>
+                                    <li>Paper beats Rock.</li>
+                                </ul>
+                            </li>
+                            <li><strong></strong></li>
+                            
+                        </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Rock Paper Scissor</h2>
+                            <ul>
+                                <li><strong>Two Players:</strong>The game is played between two players.</li>
+                                <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes: Rock, Paper, or Scissors.</li>
+                                <li><strong>Winning Combinations:</strong>
+                                    <ul>
+                                        <li>Rock beats Scissors.</li>
+                                        <li>Scissors beats Paper.</li>
+                                        <li>Paper beats Rock.</li>
+                                    </ul>
+                                </li>
+                                <li><strong></strong></li>
+                                
+                            </ul>
+                            </div>
+                            <div class="col-md-6">
+                <h2>Rock Paper Scissor</h2>
+                <ul>
+                    <li><strong>Two Players:</strong>The game is played between two players.</li>
+                    <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes: Rock, Paper, or Scissors.</li>
+                    <li><strong>Winning Combinations:</strong>
+                        <ul>
+                            <li>Rock beats Scissors.</li>
+                            <li>Scissors beats Paper.</li>
+                            <li>Paper beats Rock.</li>
+                        </ul>
+                    </li>
+                    <li><strong></strong></li>
+                    
+                </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Rock Paper Scissor</h2>
+                    <ul>
+                        <li><strong>Two Players:</strong>The game is played between two players.</li>
+                        <li><strong>Three Shapes:</strong> Each player simultaneously selects one of three shapes: Rock, Paper, or Scissors.</li>
+                        <li><strong>Winning Combinations:</strong>
+                            <ul>
+                                <li>Rock beats Scissors.</li>
+                                <li>Scissors beats Paper.</li>
+                                <li>Paper beats Rock.</li>
+                            </ul>
+                        </li>
+                        <li><strong></strong></li>
+                        
+                    </ul>
+                    </div> -->
+    <!-- </div>
+        </div>
+    </section> -->
+
+    <footer class="mt-5">
+        <div id="foot1">
+            <ul>
+                <li id="fir" class="fs-5">About</li>
+                <li>Rock Paper Scissor</li>
+                <li>Tic Tac Toe</li>
+                <li>Connect 4</li>
+                <li>Dot and Boxes</li>
+                <li>Hangman</li>
+                <li>Guessing Game</li>
+
+
+
+            </ul>
+
+            <ul>
+                <li id="fir" class="fs-5">Contact</li>
+                <li>Phone No.</li>
+                <li>Email</li>
+
+            </ul>
+
+            <ul>
+                <li id="fir" class="fs-5">Legal</li>
+                <li>Terms & Conditions</li>
+
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+
+            </ul>
+
+            <div id="pics2">
+                <div id="app2">
+
+                </div>
+                <div id="play2">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="foot2">
+            <div id="bord">
+                <div id="logo2"></div>
+
+                <div id="right">
+                    <!-- <i class="fa-solid fa-copyright"></i> -->
+                    <div id="rght">
+
+                    </div>
+                </div>
+                <div id="icon2">
+
+
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous">
+
+
+        </script>
+    <script>
+
+        //     function color1(){
+        // var ruleContainers = document.getElementsByClassName("rules");
+
+        // // Loop through the elements and toggle their display property
+        // for (var i = 0; i < ruleContainers.length; i++) {
+        //   var rule = ruleContainers[i];
+
+        //   if (rule.style.display === "none" || rule.style.display === "") {
+        //     rule.style.display = "block";
+        //     break; // or "inline", "flex", etc., depending on your desired display type
+        //   } else {
+        //     rule.style.display = "none";
+        //   }
+        // }
+        // }
+        // function color1() {
+        //   var ruleContainers = document.getElementsByClassName("rules");
+
+        //   // Get the index of the clicked button
+        //   var clickedButtonIndex = Array.from(document.querySelectorAll(".hvv")).indexOf(event.currentTarget);
+
+        //   // Loop through the elements and set the display based on the index
+        //   for (var i = 0; i < ruleContainers.length; i++) {
+        //     var rule = ruleContainers[i];
+
+        //     if (i === clickedButtonIndex) {
+        //       rule.style.display = "block";
+        //     } else {
+        //       rule.style.display = "none";
+        //     }
+        //   }
+        // }
+
+        function color1(index) {
+            var ruleContainers = document.getElementsByClassName("rules");
+            var buttons = document.querySelectorAll(".txt");
+
+            // Loop through the elements and buttons
+            for (var i = 0; i < ruleContainers.length; i++) {
+                var rule = ruleContainers[i];
+                var button = buttons[i];
+
+                if (i === index) {
+                    rule.style.display = "block";
+                    button.classList.add("active");
+                } else {
+                    rule.style.display = "none";
+                    button.classList.remove("active");
+                }
+            }
+        }
+
+        // Attach click event handlers to the list items
+        document.querySelectorAll('.hvv').forEach(function (item, index) {
+            item.addEventListener('click', function () {
+                color1(index);
+            });
+        });
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>

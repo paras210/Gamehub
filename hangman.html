@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VANILLA JAVASCRIPT HANGMAN GAME</title>
+    <meta charset="UTF-8" />
+    <link href="hang.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous">
+
+
+        </script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top " style=" background-color: transparent !important;opacity: 1; ">
+      <div class="container-fluid" >
+           <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a>  -->
+          <button class="navbar-toggler d-inline  " style="border: 4px solid rgb(248, 247, 248); background-color: rgb(250, 247, 247);" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon " style="color: white;"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel" style="background-color: #fefefe;">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title fs-2 " id="offcanvasNavbarLabel" style="color: black;">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
+                      <li class="nav-item">
+                          <a class="nav-link fs-4" aria-current="page" href="00Project.html"  style="color: black;">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link  fs-4" aria-current="page" href="rock.html" style="color: black;">Rock Paper Scissors</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link fs-4" href="tictactoe.html" style="color: black;">Tic Tac Toe</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link fs-4" href="guess.html" style="color: black;">Guess the number</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link fs-4 active" href="#" style="color: black;">Hangman</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link fs-4" href="ztemp.html" style="color: black;">Connect 4</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link fs-4" href="box.html" style="color:black;">Dots and Boxes</a>
+                      </li>
+                  </ul>
+                  <!-- <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <div id="but d-flex justify-content-start">
+
+
+    <div class="text-center">
+        <h1 class="text-center pt-4 pb-2 mb-0 d-inline">Game Zone</h1>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center" >
+                    <div id="shape" class="text-center d-block"> </div>
+                </div>
+            </div>
+    </div>
+    </section>
+</div>
+    <div class="wrapper">
+
+      <h2>Hangman</h2>
+      
+      <p>
+        Use the alphabet below to guess the word, or click hint to get a clue.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <div class="alphabetButton" id="alphabetButtons"></div>
+      <p id="categoryName"></p>
+      <div id="hold"></div>
+      <p id="mylives"></p>
+      <p id="clue">Clue -</p>
+      <canvas id="stickman"
+        >This Text will show if the Browser does NOT support HTML5 Canvas
+        tag</canvas
+      >
+      <div class="container">
+        <button class="btn-2" id="hint">Hint</button>
+        <button class="btn-2" id="reset">Play again</button>
+      </div>
+    </div>
+    <script src="hang.js"></script>
+  </body>
+</html>

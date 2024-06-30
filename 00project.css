@@ -1,0 +1,237 @@
+
+
+body{
+    background-color: #21264B;
+    background-image: url("final\ bg.jpg") ;
+    /* background: linear-gradient(to right, #7f53ac, #657ced); */
+    background-size: contain;
+   
+   
+    
+    
+    
+    color: rgb(230, 230, 230);
+    
+
+overflow-x: hidden;
+/* color: #ffffff; */
+
+
+}
+#navbar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    left:0px;
+
+}
+#content{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+h1{
+    color: #f8f7f8;
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    
+}
+/* .game{
+    width: 400px;
+    height: 250px;
+    border: 5px solid rgb(0, 0, 0);
+    color: rgb(241, 0, 177);
+    
+}  */
+.gam{
+    height: 250px;
+    border: 6px solid #1f2661;
+    
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+}
+
+.bc{
+    background-color: #1f2661d3;
+    top:-20%;
+    transition: 0.3s;
+
+}
+#img1:hover .bc{
+    transform: translateY(-45%);
+
+    
+}
+.zoom:hover {
+   
+    transform: scale(1.15); 
+    transition: 0.5s;
+    
+}
+
+
+@media(max-width:360px)
+{
+    .ff{
+        font-size:15px !important;
+        font-weight: 500;
+    }
+    .ff1{
+        font-size:12px !important;
+    }
+    .bc{
+        top:-10% !important;
+
+    }
+}
+.ime{
+    opacity: 0.3 !important;
+}
+#shape{
+
+    border-top: 5px solid #f9f9f9 ;
+    border-radius: 100%;
+    height: 45px;
+    width: 225px;
+    
+}
+
+/* footer */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#foot1 {
+    height: 425px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 25px;
+
+}
+
+li {
+    padding: 10px;
+}
+
+#foot1 li {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#play2 {
+    background-image: url("play.webp");
+    width: 210px;
+    height: 60px;
+    background-size: cover;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+#app2 {
+    background-image: url("app.webp");
+    width: 210px;
+    height: 60px;
+    background-size: cover;
+    border: 1px solid grey;
+    border-radius: 8px;
+
+}
+
+#pics2 {
+    margin: 50px;
+    margin-top: 100px;
+
+}
+
+#fir {
+    color: #808080;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+#foot2 {
+    height: 105px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+#bord {
+    width: 60%;
+    padding-top: 25px;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #logo2 {
+    background-image: url("swiglogo2.webp");
+    background-size: cover;
+    width: 150px;
+    height: 43px;
+} */
+
+#right {
+    color: #ffffff;
+    font-size: 1.2rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#rght {
+    margin-left: 5px;
+    width: 170px;
+    height: 55px;
+    background-image: url("logo.png");
+    background-size: cover;
+}
+
+#icon2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+.back{
+    background-color:#ffffff;
+}
+.txt{
+    text-decoration: none;
+}
+.bk1{
+    background-color: #393939;
+}
+.hvv:hover a{
+    color:#fccf14 !important;
+}
+.hvv{
+    border-bottom:1px solid #4d4d4d;
+}
+.active{
+    color:#d400ff !important;
+  
+}
+.rules{
+    display:none;
+}
